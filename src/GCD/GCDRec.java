@@ -25,4 +25,10 @@ int gcd=0;
 }return gcd;
 	
 }
+	
+	private static int gcdRec(int a, int b){
+	if(a == 0 ) return b;
+         int r = a % b;
+	return gcdRec(r, a);	
+	}
 }
